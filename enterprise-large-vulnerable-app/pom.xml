@@ -1,0 +1,21 @@
+
+<project xmlns="http://maven.apache.org/POM/4.0.0">
+ <modelVersion>4.0.0</modelVersion>
+ <groupId>com.acm</groupId>
+ <artifactId>enterprise-large-vulnerable-app</artifactId>
+ <version>1.0.0</version>
+
+ <dependencies>
+   <dependency>
+      <groupId>log4j</groupId>
+      <artifactId>log4j</artifactId>
+      <version>1.2.17</version>
+   </dependency>
+
+   <dependency>
+      <groupId>commons-collections</groupId>
+      <artifactId>commons-collections</artifactId>
+      <version>3.2.1</version>
+   </dependency>
+ </dependencies>
+</project>
