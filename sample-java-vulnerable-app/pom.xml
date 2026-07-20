@@ -4,7 +4,45 @@
     <artifactId>sample-java-vulnerable-app</artifactId>
     <version>1.0.0</version>
 
+   <properties>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</7>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <spring.version>6.1.5</spring.version>
+        <jackson.version>2.17.0</jackson.version>
+        <junit.version>5.10.2</junit.version>
+    </properties>
+
+    <!-- Multiple Dependencies Container -->
     <dependencies>
+        <!-- 1. Spring Context (Core Framework) -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+
+        <!-- 2. Jackson Databind (JSON Processing) -->
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>${jackson.version}</version>
+        </dependency>
+
+        <!-- 3. Apache Commons Lang (Utility Library) -->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.14.0</version>
+        </dependency>
+
+        <!-- 4. JUnit Jupiter API (Testing - Scope Limited to Test Run) -->
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <version>${junit.version}</version>
+            <scope>test</scope>
+        </dependency>
         <dependency>
             <groupId>log4j</groupId>
             <artifactId>log4j</artifactId>
